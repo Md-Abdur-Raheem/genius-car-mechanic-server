@@ -54,6 +54,11 @@ async function run() {
         const result = await servicesCollection.deleteOne(query);
         res.json(result);
       })
+
+
+      app.get('/hello', (req, res) => {
+        res.send('hello updated')
+      })
         
      
         
